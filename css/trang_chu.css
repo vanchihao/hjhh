@@ -1,0 +1,314 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    background-image: url("../img/vientuong/img7.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    background-color: #000000ce;
+}
+#logo{
+    width: 100px;
+    height: 100%;
+    margin-left: 10px;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+#logo:hover{
+    transform: rotate(45deg);
+}
+header h1{ 
+    display: flex;
+    margin-left: 170px;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 6px 4px 0px black;
+}
+div#search{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 50px;
+}
+#nhap{
+    width: 80px;
+    height: 45px;
+    border-radius: 35px;
+    font-size: 20px;
+    display: block;
+    padding-left: 20px;
+    z-index: 2;
+}
+#btn{
+    margin-left: -40px;
+    margin-top:1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+    z-index: 2;
+}
+
+div#search #nhap:hover{
+    width: 330px;
+    height: 45px;
+}
+select{
+    margin-left: 300px;
+    padding-left: 10px;
+    position: absolute;
+    width: 180px;
+    height: 48px;
+    background-color: azure;
+    font-size: 20px;
+    border-radius: 35px;
+    z-index: 1;
+}
+nav{
+    position:relative;
+    width: 100%;
+    height: 130px;
+    background-color: #000000ce;
+    margin-top: -16px;
+}
+nav ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0px;
+}
+nav ul li{
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 12px;
+    margin-top: 12px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    border-bottom: 5px solid rgb(0, 255, 34);
+    border-left: 5px solid rgb(0, 255, 34) ;
+    border-top: 5px solid rgb(255, 230, 0);
+    border-right: 5px solid rgb(255, 230, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden;
+}
+nav ul li a{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+nav ul li a img{
+    height: 100px;
+    width: 100px;
+    display: none;
+}
+nav ul li a span{
+    display: block;
+    
+}
+nav ul li:hover{
+    border-bottom: 5px solid rgb(255, 94, 0);
+    border-top: 5px solid rgb(255, 0, 0) ;
+    border-left: 5px solid rgb(255, 94, 0);
+    border-right: 5px solid rgb(255, 0, 0);
+}
+nav ul li:hover span{
+    display: none;
+}
+nav ul li:hover img{
+    display: block;
+}
+#h2{
+    max-width: 100%;
+    max-height: 71px;
+    position: relative;
+    margin-top: 0px;
+    text-align:center;
+    padding-top: 0px;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: rgb(253, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+}
+#main{
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    height: 1000px;
+    z-index: 0;
+    overflow: hidden;
+}
+#main ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+#main ul li{
+    margin-left: 3px;
+    margin-top: 3px;
+    width: 297px;
+    height: 297px;
+    float: left;
+    border: 3px solid rgb(0, 0, 0);
+    overflow: hidden;
+}
+#main ul li:hover{
+    border: 3px solid rgb(255, 0, 0);
+}
+#main ul li a{
+    text-decoration: none;
+}
+#main ul li a  figure{
+    margin: 0;
+    width: 100%;
+    height: 197px;
+    overflow: hidden;
+}
+#main ul li a figure img{
+    margin: 0;
+    width: 100%;
+    height: 197px;
+    overflow: hidden;
+}
+#main ul li a figure img:hover{
+    scale: 0.9;
+}
+#main ul li a figcaption{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main ul li a figcaption:hover{
+    background-color: #000000c9;
+}
+#main ul li a figcaption:hover span#theloai {
+    color: #ffffff;
+}
+#main ul li a figcaption:hover span#ten {
+    color: #ffffff;
+}
+#main ul li a figcaption:hover span#time {
+    color: #ffffff;
+}
+#main ul li a figcaption:hover span#quocgia {
+    color: #ffffff;
+}
+#main ul li a figcaption span#quocgia{
+    position: absolute;
+    margin-top: 1px;
+    margin-left: -3px;
+    display: flex;
+    justify-content: left;
+    font-size: 15px;
+    color: #000000;
+}
+#main ul li a figcaption span#time{
+    padding-right: 8px;
+    padding-top: 1px;
+    display: flex;
+    justify-content: right;
+    font-size: 15px;
+    color: #000000;
+}
+#main ul li a figcaption span#ten{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: #000000;
+    overflow: visible;
+}
+#main ul li a figcaption span#theloai{
+    display: flex;
+    padding-top: 3px;
+    font-size: 17px;
+    color: #000000;
+    overflow: visible;
+}
+#them{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+#btn_them{
+    width: 97%;
+    height: 97%;
+    background-color: green;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+#btn_an{
+    width: 97%;
+    height: 97%;
+    background-color:green;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+#btn_them:hover{
+    border: 1px solid rgb(255, 255, 255);
+}
+#btn_an:hover{
+    border: 1px solid rgb(255, 255, 255);
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+footer p{
+    padding-left: 30px;
+}

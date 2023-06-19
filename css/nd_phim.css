@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    background-image: url("../img/hoathinh/img7.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 50% 100%;
+    backdrop-filter: blur(2px);
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: #000000e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+    color: #ffffff;
+}
+main{
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    background-color: #000000c4;
+}
+#cc{
+    width: 100%;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+article{
+    margin-top: 20px;
+    width: 400px;
+    height: 600px;
+    background-color: rgb(248, 248, 248);
+    overflow: hidden;
+    border: 2px solid black;
+}
+#hinh {
+    margin: 0;
+    width: 400px;
+    height: 450px;
+}
+#hinh img{
+    width: 100%;
+    height: 100%;
+}
+figcaption#gioithieu{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+}
+#theloai{
+    font-size: 20px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#thoiluong{
+    font-size: 20px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#phanphim{
+    font-size: 20px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#quocgia{
+    font-size: 20px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#nsx{
+    font-size: 20px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#noidung{
+    font-size: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 100%;
+    height: 540px;
+    background-color: #000000de;
+    color: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+footer p{
+    padding-left: 30px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/trang_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TRANG PHIM CỔ TRANG</title>
+</head>
+<script src="../js/javascrip.js"> </script>
+<style>
+    header{
+        background-color: rgb(209, 188, 0);
+    }
+    nav ul li{
+        border: 2px solid rgb(209, 188, 0);
+    }
+    nav ul li:hover{
+        background-color: rgb(209, 188, 0);
+    }
+    #h2{
+        border: 3px solid rgb(209, 188, 0);
+    }
+    main ul li:hover{
+        border: 3px solid rgb(209, 188, 0);
+    }
+</style>
+<body onload="js_body()">
+    <header>
+        <div id="logo"><img src="../img/img_trangchu/logo.png"></div>  
+        <div id="search">
+            <input id="nhap" type="text" value="" onkeyup="search()" placeholder="search">
+        </div>
+        <select name="chon" id="chon" onchange="chon()">
+                <option value="Tất cả phim" >Tất cả phim</option>
+                <option value="Mỹ" >Mỹ</option>
+                <option value="Việt Nam" >Việt Nam</option>
+                <option value="Anh" >Anh</option>
+                <option value="Hàn Quốc" >Hàn Quốc</option>
+                <option value="Nhật Bản" >Nhật Bản</option>
+                <option value="Trung Quốc" >Trung Quốc</option>
+            </optgroup>
+        </select>
+        <h1>PHIM CỔ TRANG</h1> 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../html/trang_chu.html"><span>Trang chủ</span></a></li>
+            <li><a href="../html/trang_vientuong.html"><span>Viễn tưởng</span></a></li>
+            <li><a href="../html/trang_kinhdi.html"><span>Kinh dị</span></a></li>
+            <li><a href="../html/trang_hai.html"><span>Hài kịch</span></a></li>
+            <li><a href="../html/trang_chientranh.html"><span>Chiến tranh</span></a></li>
+            <li><a href="../html/trang_tinhcam.html"><span>Tình cảm</span></a></li>
+            <li><a href="../html/trang_amnhac.html"><span>Âm nhạc</span></a></li>
+            <li><a href="../html/trang_hoathinh.html"><span>Hoạt hình</span></a></li>
+            <li><a href="../html/trang_toipham.html"><span>Tâm lý</span></a></li>
+            
+            <li><a href="../html/trang_hanhdong.html"><span>Hành động</span></a></li>
+        </ul>
+    </nav>
+    <div id="h2">Tất cả phim</div>
+    <main id="main">
+        <ul id="tatcaphim">
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/cotrang/img.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Trung Quốc</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>ASSASSIN</b></span><span id="theloai">Thể loại: Cổ trang</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/cotrang/img1.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>MỸ NHÂN KẾ</b></span><span id="theloai">Thể loại: Cổ trang</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/cotrang/img2.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Trung Quốc</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>ĐẤU LA ĐẠI LỤC</b></span><span id="theloai">Thể loại: Cổ trang</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/cotrang/img3.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>TẤM CÁM</b></span><span id="theloai">Thể loại: Cổ trang</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/cotrang/img4.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Trung Quốc</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>TAM QUỐC 2010</b></span><span id="theloai">Thể loại: Cổ trang</span>
+            </figcaption></a></li>
+            
+        </ul>
+    </main>
+    <div id="them"><button id="btn_them" onclick="them(1)">Xem thêm</button>
+        <button id="btn_an" onclick="them(2)">Ẩn bớt</button></div>
+    <footer>
+        <footer>
+            <p>NGUYỄN VĂN CHÍ HÀO</br>
+            CCNTT21C</br>
+            <p><a href="#" style="text-decoration: none;color: rgb(0, 71, 10);background-color: aliceblue;font-size: 20px;">Trở về đầu trang</a></p>
+        </footer>  
+    </footer>
+</body>
+
+</html>

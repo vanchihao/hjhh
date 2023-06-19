@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/trang_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TRANG PHIM VIỄN TƯỞNG</title>
+</head>
+<script src="../js/javascrip.js"> </script>
+<style>
+    header{
+        background-color: rgb(0, 163, 163);
+    }
+    nav ul li{
+        border: 2px solid rgb(0, 163, 163);
+    }
+    nav ul li:hover{
+        background-color: rgb(0, 163, 163);
+    }
+    #h2{
+        border: 3px solid rgb(0, 163, 163);
+    }
+    main ul li:hover{
+        border: 3px solid rgb(0, 163, 163);
+    }
+</style>
+<body onload="js_body()">
+    <header>
+        <div id="logo">
+            <img src="../img/img_trangchu/logo.png">
+        </div>  
+        <div id="search">
+            <input id="nhap" type="text" value="" onkeyup="search()" placeholder="search">
+        </div>
+        <select name="chon" id="chon" onchange="chon()">
+                <option value="Tất cả phim" >Tất cả phim</option>
+                <option value="Mỹ" >Mỹ</option>
+                <option value="Việt Nam" >Việt Nam</option>
+                <option value="Anh" >Anh</option>
+                <option value="Hàn Quốc" >Hàn Quốc</option>
+                <option value="Nhật Bản" >Nhật Bản</option>
+                <option value="Trung Quốc" >Trung Quốc</option>
+            </optgroup>
+        </select>
+        <h1>PHIM VIỄN TƯỞNG</h1> 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../html/trang_chu.html"><span>Trang chủ</span></a></li>
+            <li><a href="../html/trang_kinhdi.html"><span>Kinh dị</span></a></li>
+            <li><a href="../html/trang_hai.html"><span>Hài kịch</span></a></li>
+            <li><a href="../html/trang_chientranh.html"><span>Chiến tranh</span></a></li>
+            <li><a href="../html/trang_tinhcam.html"><span>Tình cảm</span></a></li>
+            <li><a href="../html/trang_amnhac.html"><span>Âm nhạc</span></a></li>
+            <li><a href="../html/trang_hoathinh.html"><span>Hoạt hình</span></a></li>
+            <li><a href="../html/trang_toipham.html"><span>Tội phạm</span></a></li>
+            <li><a href="../html/trang_cotrang.html"><span>Cổ trang</span></a></li>
+            <li><a href="../html/trang_hanhdong.html"><span>Hành động</span></a></li>
+        </ul>
+    </nav>
+    <div id="h2">Tất cả phim</div>
+    <main id="main">
+        <ul id="tatcaphim">
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>NGƯỜI KIẾN</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+            </span></figcaption></a></li>  
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img1.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>STAR WARS</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+            </span></figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img2.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Anh</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>HARRY POTTER</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+            </span></figcaption></a></li>  
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img3.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>AQUAMAN</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+            </span></figcaption></a></li> 
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img5.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>NGƯỜI NHỆN</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+            </span></figcaption></a></li> 
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img6.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>AVENGERS</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+            </span></figcaption></a></li> 
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img7.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>VỆ BINH DẢI NGÂN HÀ</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+            </span></figcaption></a></li> 
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img8.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>LIÊN MINH CÔNG LÝ</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+            </span></figcaption></a></li> 
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img8.jpeg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>KẺ HỦY DIỆT</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+            </span></figcaption></a></li> 
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img9.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>THOR</b></span><span id="theloai">thể loại:
+            </span></figcaption></a></li> 
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img10.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Thời gian: 1/1/2023</br></span>
+                <span id="ten"><b>NGƯỜI ĐÀN ÔNG THÉP</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+            </span></figcaption></a></li>
+                                         
+        </ul>
+    </main>
+    <div id="them"><button id="btn_them" onclick="them(1)">Xem thêm</button>
+        <button id="btn_an" onclick="them(2)">Ẩn bớt</button></div>
+    <footer>
+        <footer>
+            <p>NGUYỄN VĂN CHÍ HÀO</br>
+            CCNTT21C</br>
+            <p><a href="#" style="text-decoration: none;color: rgb(0, 71, 10);background-color: aliceblue;font-size: 20px;">Trở về đầu trang</a></p>
+        </footer>  
+    </footer>
+</body>
+
+</html>

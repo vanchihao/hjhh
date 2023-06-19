@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/trang_chu.css">
+    <title>Trang chu</title>
+</head>
+<script src="../js/javascrip.js"> </script>
+<body onload="js_body()">
+
+    <header id="tieude">
+        <div id="logo">
+            <img src="../img/img_trangchu/logo.png">
+        </div>
+        <div id="search">
+            <input id="nhap" type="text" value="" onkeyup="search()" placeholder="search">
+        </div>
+        <select name="chon" id="chon" onchange="chon()">
+            <option value="Phim sắp chiếu" >Phim sắp chiếu</option>
+            <option value="Tất cả phim" >Tất cả phim</option>
+            <optgroup label="Quốc gia">
+                <option value="Mỹ" >Mỹ</option>
+                <option value="Việt Nam" >Việt Nam</option>
+                <option value="Anh" >Anh</option>
+                <option value="Hàn Quốc" >Hàn Quốc</option>
+                <option value="Nhật Bản" >Nhật Bản</option>
+                <option value="Trung Quốc" >Trung Quốc</option>
+            </optgroup>
+        </select>
+        <h1>GIỚI THIỆU PHIM</h1> 
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="trang_hai.html"><img src="../img/hai/img3.jpg" alt=""><span>Hài kịch</span></a></li>
+            <li><a href="trang_vientuong.html"><img src="../img/vientuong/img8.jpeg" alt=""><span>Viễn tưởng</span></a></li>
+            <li><a href="trang_kinhdi.html"><img src="../img/kinhdi/img5.jpg" alt=""><span>Kinh dị</span></a></li>
+            <li><a href="trang_chientranh.html"><img src="../img/chientranh/img.jpg" alt=""><span>Chiến tranh</span></a></li>
+            <li><a href="trang_tinhcam.html"><img src="../img/tinhcam/img2.jpg" alt=""><span>Tình cảm</span></a></li>
+            <li><a href="trang_amnhac.html"><img src="../img/amnhac/img2.jpg" alt=""><span>Âm nhạc</span></a></li>
+            <li><a href="trang_hoathinh.html"><img src="../img/hoathinh/img8.jpg" alt=""><span>Hoạt hình</span></a></li>
+            <li><a href="trang_toipham.html"><img src="../img/tamly/img9.jpg" alt=""><span>Tâm lý</span></a></li>
+            <li><a href="trang_cotrang.html"><img src="../img/cotrang/img4.jpg" alt=""><span>Cổ trang</span></a></li>
+            <li><a href="trang_hanhdong.html"><img src="../img/hanhdong/img7.jpg" alt=""><span>Hành động</span></a></li>
+        </ul>
+    </nav>
+    <div id="h2">Phim sắp chiếu</div>
+    <main id="main">
+        <ul id="phimsapchieu">
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tamly/babylon.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2022</br></span>
+                <span id="ten"><b>BABYLON </b></span><span id="theloai">Thể loại: tâm lý</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/amnhac/btsyettocomecinemas.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Hàn Quốc</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>BTS: YET TO COME CINEMAS </b></span><span id="theloai">Thể loại: âm nhạc</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tinhcam/img8.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>NHÀ BÀ NỮ </b></span><span id="theloai">Thể loại: tình cảm</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/AvatarDòng chảy của nước.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>AVATAR: DÒNG CHẢY CỦA NƯỚC </b></span><span id="theloai">Thể loại: viễn tưởng</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/kinhdi/img7.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>VONG NHI </b></span><span id="theloai">Thể loại: kinh dị</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/Người kiến và chiến binh ong Thế giới lượng tử.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>NGƯỜI KIẾN VÀ CHIẾN BINH ÔNG: THẾ GIỚI LƯỢNG TỬ </b></span><span id="theloai">Thể loại: viễn tưởng</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/Shazam Cơn thịnh nộ của các vị thần.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>SHAZAM! CƠN THỊNH NỘ CỦA CÁC VỊ THẦN </b></span><span id="theloai">Thể loại: viễn tưởng</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hanhdong/Bay vào tử địa.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>BAY VÀO TỬ ĐỊA </b></span><span id="theloai">Thể loại: hành động</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hanhdong/Qúy ông số Đỏ.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Hàn Quốc</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>QUÝ ÔNG SỐ "ĐỎ" </b></span><span id="theloai">Thể loại: hành động</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tamly/Chị chị em em 2.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>CHỊ CHỊ EM EM 2 </b></span><span id="theloai">Thể loại: tâm lý</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/kinhdi/M3GAN.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>M3GAN </b></span><span id="theloai">Thể loại: kinh dị</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/kinhdi/no ở trong rừng.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>"NÓ" Ở TRONG RỪNG</b></span><span id="theloai">Thể loại: Kinh dị</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/kinhdi/Tiếng gõ ở căn nhà gỗ.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>TIẾNG GÕ Ở CĂN NHÀ GỖ </b></span><span id="theloai">Thể loại: kinh dị</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tinhcam/Thanh âm tình đầu.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Hàn Quốc</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>THANH ÂM TÌNH ĐẦU </b></span><span id="theloai">Thể loại: Tình cảm</span>
+            </figcaption></a></li>
+            <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tinhcam/Nhắn gửi tất cả các em những người tôi đã yêu.jpg" alt=""></figure><figcaption>
+                <span id="quocgia">Quốc gia: Nhật Bản</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                <span id="ten"><b>NHẮN GỬI TẤT CẢ CÁC EM NHỮNG NGƯỜI TÔI ĐÃ YÊU </b></span><span id="theloai">Thể loại: Tình cảm</span>
+            </figcaption></a></li> 
+        </ul>
+        <div id="tatcaphim" style="display: none;">
+            <ul id="theloai_vientuong">
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>NGƯỜI KIẾN</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+                </span></figcaption></a></li>  
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img1.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>STAR WARS</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+                </span></figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img2.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Anh</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>HARRY POTTER</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+                </span></figcaption></a></li>  
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img3.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>AQUAMAN</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+                </span></figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img5.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>NGƯỜI NHỆN</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+                </span></figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img6.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>AVENGERS</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+                </span></figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img7.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>VỆ BINH DẢI NGÂN HÀ</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+                </span></figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img8.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>LIÊN MINH CÔNG LÝ</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+                </span></figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img8.jpeg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>KẺ HỦY DIỆT</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+                </span></figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img9.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>THOR</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+                </span></figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/vientuong/img10.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>NGƯỜI ĐÀN ÔNG THÉP</b></span><span id="theloai">thể loại: Khoa học viễn tưởng
+                </span></figcaption></a></li> 
+            </ul>
+            <ul id="theloai_amnhac">
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/amnhac/bacthaycuanhunggiacmo.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>BẬC THẦY CỦA NHỮNG GIẤC MƠ </b></span><span id="theloai">Thể loại: Âm nhạc, nhạc kịch</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/amnhac/img1.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>ALADIN </b></span><span id="theloai">Thể loại: Âm nhạc, nhạc kịch</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/amnhac/img2.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>NGƯỜI ĐẸP VÀ QUÁI VẬT </b></span><span id="theloai">Thể loại: Âm nhạc, nhạc kịch</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/amnhac/khatvongnhipdieu.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>KHÁT VỌNG NHỊP ĐIỆU </b></span><span id="theloai">Thể loại: Âm nhạc, nhạc kịch</span>
+                </figcaption></a></li>
+            </ul>
+            <ul id="theloai_chientranh">
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/chientranh/img.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Anh</span><span id="time">Khởi chiếu: 1/1/2010</br></span>
+                    <span id="ten"><b>MACBETH </b></span><span id="theloai">Thể loại: Chiến tranh</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/chientranh/img1.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/1999</br></span>
+                    <span id="ten"><b>ĐƯỜNG LÊN ĐIỆN BIÊN </b></span><span id="theloai">Thể loại: Chiến tranh</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/chientranh/img2.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/1997</br></span>
+                    <span id="ten"><b>THE WALL </b></span><span id="theloai">Thể loại: Chiến tranh</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/chientranh/img3.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2013</br></span>
+                    <span id="ten"><b>MALNAZIDOS </b></span><span id="theloai">Thể loại: Chiến tranh</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/chientranh/img4.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>NỮ THẦN CHIẾN BINH </b></span><span id="theloai">Thể loại: Chiến tranh</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/chientranh/img5.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/1985</br></span>
+                    <span id="ten"><b>VÁN BÀI LẬT NGỮA </b></span><span id="theloai">Thể loại: Chiến tranh</span>
+                </figcaption></a></li>
+            </ul>
+            <ul id="theloai_cotrang">
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/cotrang/img.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Trung Quốc</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>ASSASSIN</b></span><span id="theloai">Thể loại: Cổ trang</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/cotrang/img1.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>MỸ NHÂN KẾ</b></span><span id="theloai">Thể loại: Cổ trang</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/cotrang/img2.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Trung Quốc</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>ĐẤU LA ĐẠI LỤC</b></span><span id="theloai">Thể loại: Cổ trang</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/cotrang/img3.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>TẤM CÁM</b></span><span id="theloai">Thể loại: Cổ trang</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/cotrang/img4.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Trung Quốc</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>TAM QUỐC 2010</b></span><span id="theloai">Thể loại: Cổ trang</span>
+                </figcaption></a></li>
+            </ul>
+            <ul id="theloai_haikich">
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hai/img.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/2015</br></span>
+                    <span id="ten"><b>NGHỀ SIÊU DỄ</b></span><span id="theloai">thể loại: hài kịch</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hai/img1.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2020</br></span>
+                    <span id="ten"><b>THE SPACE BETWEEN </b></span><span id="theloai">thể loại:  hài kịch</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hai/img2.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/2012</br></span>
+                    <span id="ten"><b>ĐỂ MAI TÍNH</b></span><span id="theloai">thể loại: hài kịch</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hai/img3.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/2021</br></span>
+                    <span id="ten"><b>BỐ GIÀ</b></span><span id="theloai">thể loại: hài kịch</span>
+                </figcaption></a></li>
+            </ul>
+            <ul id="theloai_hanhdong">
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hanhdong/img.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>FAST A FURIOUS</b></span><span id="theloai">Thể loại: Hành động, bạo lực</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hanhdong/img1.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>NHIỆM VỤ BẤT KHẢ THI </b></span><span id="theloai">Thể loại: Hành động, bạo lực</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hanhdong/img2.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>THE HATTEFUL8 </b></span><span id="theloai">Thể loại: Hành động, bạo lực</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hanhdong/img3.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>THE BATMAN </b></span><span id="theloai">Thể loại: Hành động, bạo lực</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hanhdong/img4.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>KHÔNG PHẢI LÚC CHẾT </b></span><span id="theloai">Thể loại: Hành động, bạo lực</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hanhdong/img5.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>SIX BULLETS </b></span><span id="theloai">Thể loại: Hành động, bạo lực</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hanhdong/img6.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>BIỆT ĐỘI ĐÁNH THUÊ </b></span><span id="theloai">Thể loại: Hành động, bạo lực</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hanhdong/img7.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>JOHN WICK 3</b></span><span id="theloai">Thể loại: Hành động, bạo lực</span>
+                </figcaption></a></li>
+            </ul>
+            <ul id="theloai_hoathinh">
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hoathinh/img.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2021</br></span>
+                    <span id="ten"><b>MINION </b></span><span id="theloai">Thể loại: Hoạt hình, 2D, 3D</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hoathinh/img1.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2015</br></span>
+                    <span id="ten"><b>NHỮNG MẢNH GHÉP CẢM XÚC </b></span><span id="theloai">Thể loại: Hoạt hình, 2D, 3D</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hoathinh/img2.png" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Nhật Bản</span><span id="time">Khởi chiếu: 1/1/2018</br></span>
+                    <span id="ten"><b>DOREMON </b></span><span id="theloai">Thể loại: Hoạt hình, 2D, 3D</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hoathinh/img3.png" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Nhật Bản</span><span id="time">Khởi chiếu: 1/1/2020</br></span>
+                    <span id="ten"><b>POKEMON </b></span><span id="theloai">Thể loại: Hoạt hình, 2D, 3D</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hoathinh/img4.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Nhật Bản</span><span id="time">Khởi chiếu: 1/1/2022</br></span>
+                    <span id="ten"><b>ONPICE </b></span><span id="theloai">Thể loại: Hoạt hình, 2D, 3D</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hoathinh/img5.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Nhật Bản</span><span id="time">Khởi chiếu: 1/1/2007</br></span>
+                    <span id="ten"><b>NARUTO </b></span><span id="theloai">Thể loại: Hoạt hình, 2D, 3D</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hoathinh/img6.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2001</br></span>
+                    <span id="ten"><b>VUA SƯ TỬ </b></span><span id="theloai">Thể loại: Hoạt hình, 2D, 3D</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hoathinh/img7.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Nhật Bản</span><span id="time">Khởi chiếu: 1/1/2021</br></span>
+                    <span id="ten"><b>THANH GƯƠM DIỆT QUỶ: CHUYẾN TÀU VÔ TẬN </b></span><span id="theloai">Thể loại: Hoạt hình, 2D, 3D</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hoathinh/img8.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Nhật Bản</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>THANH GƯƠM DIỆT QUỶ: LÀNG THỢ RÈN </b></span><span id="theloai">Thể loại: Hoạt hình, 2D, 3D</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hoathinh/img9.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Nhật Bản</span><span id="time">Khởi chiếu: 1/1/2016</br></span>
+                    <span id="ten"><b>DRAGON BALL </b></span><span id="theloai">Thể loại: Hoạt hình, 2D, 3D</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/hoathinh/img10.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Nhật Bản</span><span id="time">Khởi chiếu: 1/1/2020</br></span>
+                    <span id="ten"><b>THÁM TỬ LỪNG DANH </b></span><span id="theloai">Thể loại: Hoạt hình, 2D, 3D</span>
+                </figcaption></a></li>
+            </ul>
+            <ul id="theloai_kinhdi">
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/kinhdi/img.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>US </b></span><span id="theloai">Thể loại: kinh dị</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/kinhdi/img1.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>BÓNG ĐÈ </b></span><span id="theloai">Thể loại: kinh dị</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/kinhdi/img2.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>CRIMSON PEAK </b></span><span id="theloai">Thể loại: kinh dị</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/kinhdi/img3.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>THE VISIT </b></span><span id="theloai">Thể loại: kinh dị</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/kinhdi/img4.jpeg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>ANNABELLE </b></span><span id="theloai">Thể loại: kinh dị</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/kinhdi/img5.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>ÁC QUỶ MA SƠ </b></span><span id="theloai">Thể loại: kinh dị</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/kinhdi/img6.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>WALKING DEAD </b></span><span id="theloai">Thể loại: kinh dị</span>
+                </figcaption></a></li>
+            </ul>
+            <ul id="theloai_tinhcam">          
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tinhcam/img.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>TANGERINE </b></span><span id="theloai">Thể loại: Tình cảm, lãng mạn</span>
+                </figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tinhcam/img1.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>LONG WEEKEND </b></span><span id="theloai">Thể loại: Tình cảm, lãng mạn</span>
+                </figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tinhcam/img2.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>TITANIC </b></span><span id="theloai">Thể loại: Tình cảm, lãng mạn</span>
+                </figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tinhcam/img3.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>TRƯỚC NGÀY EM ĐẾN </b></span><span id="theloai">Thể loại: Tình cảm, lãng mạn</span>
+                </figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tinhcam/img4.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>THE BEST OF ME </b></span><span id="theloai">Thể loại: Tình cảm, lãng mạn</span>
+                </figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tinhcam/img5.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>MẮT BIẾC </b></span><span id="theloai">Thể loại: Tình cảm, lãng mạn</span>
+                </figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tinhcam/img6.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>365 NGÀY </b></span><span id="theloai">Thể loại: Tình cảm, lãng mạn</span>
+                </figcaption></a></li> 
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tinhcam/img7.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>QUA Ô CỬA SỔ </b></span><span id="theloai">Thể loại: Tình cảm, lãng mạn</span>
+                </figcaption></a></li> 
+            </ul>
+            <ul id="theloai_tamly">
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tamly/img.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>BLACK MASS </b></span><span id="theloai">Thể loại: tâm lý</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tamly/img2.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>THE WALK </b></span><span id="theloai">Thể loại: tâm lý</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tamly/img3.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>TIỆC TRĂNG MÁU </b></span><span id="theloai">Thể loại: tâm lý</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tamly/img4.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Hàn Quốc</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>CÔ HẦU GÁI </b></span><span id="theloai">Thể loại: tâm lý</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tamly/img5.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Việt Nam</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>THÁNG NĂM RỰC RỠ </b></span><span id="theloai">Thể loại: tâm lý</span>
+                </figcaption></a></li>
+                <li id="thongtin"><a href="../trang_nd_phim/nd_phim.html"><figure><img src="../img/tamly/img9.jpg" alt=""></figure><figcaption>
+                    <span id="quocgia">Quốc gia: Mỹ</span><span id="time">Khởi chiếu: 1/1/2023</br></span>
+                    <span id="ten"><b>PSY CHO </b></span><span id="theloai">Thể loại: tâm lý</span>
+                </figcaption></a></li>
+            </ul>
+        </div>
+    </main>
+    <div id="them"><button id="btn_them" onclick="them(1)">Xem thêm</button>
+        <button id="btn_an" onclick="them(2)">Ẩn bớt</button></div>
+    <footer>
+        <p>NGUYỄN VĂN CHÍ HÀO</br>
+        CCNTT21C</br>
+        <p><a href="#" style="text-decoration: none;color: rgb(0, 71, 10);background-color: aliceblue;font-size: 20px;">Trở về đầu trang</a></p>
+    </footer>  
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+header{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#logo{
+    width: 100px;
+    height: 100%;
+    margin-left: 10px;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+header h1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-left: 90px;
+}
+header h3{
+    margin-top: 0;
+    width: 220px;
+    height: 74px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+div#search{
+    position: relative;
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 20px;
+}
+#nhap{
+    width: 100px;
+    height: 45px;
+    border-radius: 35px;
+    font-size: 20px;
+    display: block;
+    padding-left: 25px;
+    z-index: 2;
+}
+#btn{
+    margin-left: -40px;
+    margin-top:1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+    
+}
+
+div#search #nhap:hover{
+    width: 300px;
+    height: 45px;
+}
+select{
+    margin-left: 270px;
+    padding-left: 10px;
+    position: absolute;
+    width: 180px;
+    height: 48px;
+    background-color: azure;
+    font-size: 20px;
+    border-radius: 35px;
+    z-index: 1;
+}
+#h2{
+    max-width: 100%;
+    max-height: 71px;
+    position: relative;
+    margin-top: 0px;
+    text-align:center;
+    padding-top: 0px;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+}
+nav{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    height: 22px;
+    width: 113px;
+    margin-left: 5px; 
+    margin-top: 7px;
+    float: left;
+}
+
+nav ul li a{
+    margin-top: 1px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#main{
+    position: relative;
+    margin-top: 1px;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    display: block;
+}
+main ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+main ul li{
+    margin-left: 3px;
+    margin-top: 3px;
+    width: 400px;
+    height: 400px;
+    float: left;
+    border: 3px solid rgb(255, 255, 255);
+    overflow: hidden;
+}
+main ul li a{
+    text-decoration: none;
+}
+main ul li a  figure{
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+main ul li a figure img{
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+main ul li a figure img:hover{
+    scale: 1.5;
+}
+main ul li a figcaption{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+    padding-left: 5px;
+
+}
+main ul li a figcaption:hover span#theloai {
+    color: #0011ff;
+}
+main ul li a figcaption:hover span#ten {
+    color: #0011ff;
+}
+main ul li a figcaption:hover span#time {
+    color: #0011ff;
+}
+#main ul li a figcaption:hover span#quocgia {
+    color: #0011ff;
+}
+#main ul li a figcaption span#quocgia{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    font-size: 17px;
+    color: #ffffff;
+    padding-top: 2px;
+}
+main ul li a figcaption span#time{
+    padding-right: 8px;
+    display: flex;
+    justify-content: right;
+    font-size: 17px;
+    color: #ffffff;
+}
+main ul li a figcaption span#ten{
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: #ffffff;
+    overflow: visible;
+}
+main ul li a figcaption span#theloai{
+    display: flex;
+    padding-top: 5px;
+    font-size: 17px;
+    color: #ffffff;
+    overflow: visible;
+}
+#them{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+#btn_them{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+#btn_an{
+    width: 100%;
+    height: 100%;
+    background-color:green;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+footer p{
+    padding-left: 30px;
+}
